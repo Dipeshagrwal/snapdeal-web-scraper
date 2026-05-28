@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project is a Python-based web scraping application developed to extract and analyze men's sports shoes data from Snapdeal.
+This project is a Python-based web scraping and data analysis application that extracts men's sports shoes data from Snapdeal.
 
-The scraper collects product information including:
+The scraper collects product information such as:
 
 * Product Name
 * Brand
@@ -14,43 +14,48 @@ The scraper collects product information including:
 * Product Rating
 * Number of Reviews
 
-The extracted data is stored in CSV format for further analysis and visualization.
-
----
-
-# Technologies Used
-
-* Python
-* Requests
-* BeautifulSoup
-* Pandas
-* Matplotlib
-* Seaborn
+The extracted data is stored in CSV format and visualized using charts for better analysis and insights.
 
 ---
 
 # Features
 
 * Multi-page web scraping
+* Automatic data extraction
 * CSV data export
-* Brand analysis
-* Price distribution analysis
-* Rating analysis
-* Data visualization using charts
+* Data analysis using Pandas
+* Data visualization using Matplotlib and Seaborn
+* Automatic image folder creation
+* Selenium integration to bypass website restrictions
+* Error handling and clean code structure
+
+---
+
+# Technologies Used
+
+* Python
+* Selenium
+* BeautifulSoup
+* Pandas
+* Matplotlib
+* Seaborn
+* WebDriver Manager
 
 ---
 
 # Project Structure
 
 ```bash
-snapdeal-web-scraper/
+Snapdeal/
 │
 ├── scraper.py
 ├── snapdeal_mens_sports_shoes.csv
 ├── requirements.txt
 ├── README.md
-├── .gitignore
 └── images/
+    ├── top_brands.png
+    ├── price_distribution.png
+    └── top_rated_brands.png
 ```
 
 ---
@@ -63,7 +68,13 @@ snapdeal-web-scraper/
 git clone https://github.com/YOUR_USERNAME/snapdeal-web-scraper.git
 ```
 
-## Install Dependencies
+## Navigate to Project Folder
+
+```bash
+cd snapdeal-web-scraper
+```
+
+## Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
@@ -71,7 +82,7 @@ pip install -r requirements.txt
 
 ---
 
-# Run Project
+# Run the Project
 
 ```bash
 python scraper.py
@@ -81,20 +92,30 @@ python scraper.py
 
 # Output
 
-The script generates:
+The project generates:
 
-* CSV dataset
-* Brand analysis chart
-* Price distribution graph
-* Top rated brands graph
+* CSV dataset containing product information
+* Top Brands visualization
+* Price Distribution graph
+* Top Rated Brands graph
 
 ---
 
-# Sample Output
+# Sample Dataset
 
-| Product Name | Brand  | Discounted Price | Rating |
-| ------------ | ------ | ---------------- | ------ |
-| Campus Shoes | Campus | 827              | 4.2    |
+| Product Name        | Brand  | Discounted Price | Rating |
+| ------------------- | ------ | ---------------- | ------ |
+| Campus Shoes        | Campus | 827              | 4.2    |
+| ASIAN Running Shoes | ASIAN  | 1009             | 4.3    |
+
+---
+
+# Data Analysis Performed
+
+* Top brands based on number of products
+* Price distribution analysis
+* Average rating analysis
+* Most expensive products analysis
 
 ---
 
@@ -102,36 +123,71 @@ The script generates:
 
 ## Top Brands
 
-(Add screenshot here)
+![Top Brands](images/top_brands.png)
+
+---
 
 ## Price Distribution
 
-(Add screenshot here)
+![Price Distribution](images/price_distribution.png)
+
+---
 
 ## Top Rated Brands
 
-(Add screenshot here)
+![Top Rated Brands](images/top_rated_brands.png)
 
 ---
 
 # Challenges Faced
 
-* Dynamic website structure
-* Changing HTML class names
-* Missing ratings in some products
-* Data cleaning and preprocessing
+* Snapdeal blocking requests with 403 errors
+* Dynamic website HTML structure
+* Extracting ratings correctly
+* Handling missing data
+* Automating browser interaction using Selenium
+
+---
+
+# Solutions Implemented
+
+* Used Selenium to bypass request blocking
+* Added proper error handling
+* Implemented automatic folder creation
+* Used fallback techniques for missing values
+* Converted raw data into structured format
 
 ---
 
 # Future Improvements
 
-* Selenium integration
-* Export to Excel/JSON
-* Streamlit dashboard
-* Automated scheduling
-* Sentiment analysis on reviews
+* Export data to Excel and JSON
+* Build Streamlit dashboard
+* Add sentiment analysis
+* Implement scheduled scraping
+* Scrape multiple product categories
+
+---
+
+# Learning Outcomes
+
+This project helped in understanding:
+
+* Web scraping techniques
+* Browser automation using Selenium
+* HTML parsing with BeautifulSoup
+* Data cleaning and preprocessing
+* Data visualization
+* CSV handling with Pandas
 
 ---
 
 # Author
-Dipesh Agrawal
+
+Dipesh
+
+---
+
+# License
+
+This project is licensed under the MIT License.
