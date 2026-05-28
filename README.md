@@ -103,8 +103,6 @@ The project generates:
 
 # Sample Dataset
 
-# Sample Dataset
-
 | Product Name | Brand | Original Price | Discounted Price | Discount | Rating | Reviews |
 |---|---|---|---|---|---|---|
 | Campus VIBGYOR Tan Men's Sports Running Shoes | Campus | 1399 | 827 | 41% Off | 4.2 | 893 |
