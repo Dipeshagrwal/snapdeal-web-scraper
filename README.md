@@ -103,10 +103,15 @@ The project generates:
 
 # Sample Dataset
 
-| Product Name        | Brand  | Discounted Price | Rating |
-| ------------------- | ------ | ---------------- | ------ |
-| Campus Shoes        | Campus | 827              | 4.2    |
-| ASIAN Running Shoes | ASIAN  | 1009             | 4.3    |
+# Sample Dataset
+
+| Product Name | Brand | Original Price | Discounted Price | Discount | Rating | Reviews |
+|---|---|---|---|---|---|---|
+| Campus VIBGYOR Tan Men's Sports Running Shoes | Campus | 1399 | 827 | 41% Off | 4.2 | 893 |
+| AAVEAA Sneakers shoes White Men's Sports Running Shoes | AAVEAA | 1999 | 453 | 77% Off | 5.0 | 2 |
+| Campus FIRST Black Men's Sports Running Shoes | Campus | 1899 | 1041 | 45% Off | 4.2 | 5997 |
+| hotstyle Gray Men's Sports Running Shoes | hotstyle | 2499 | 489 | 80% Off | 4.0 | 1084 |
+| ASIAN SUPERSTAR-01 Black Men's Sports Running Shoes | ASIAN | 2549 | 1009 | 60% Off | 4.3 | 650 |
 
 ---
 
