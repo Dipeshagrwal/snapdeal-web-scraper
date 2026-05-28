@@ -187,10 +187,4 @@ This project helped in understanding:
 
 # Author
 
-Dipesh
-
----
-
-# License
-
-This project is licensed under the MIT License.
+Dipesh Agrawal
